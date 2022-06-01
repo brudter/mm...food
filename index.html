@@ -10,69 +10,53 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Libre+Baskerville:400italic" rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
+  <!-- CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/catslider/catslider.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-</head>
 
+
+<!-- navigation -->
 <body data-spy="scroll" data-offset="58" data-target="#navigation">
-
   <div id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="img/logo.png" width="30"></a>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" width="30"</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#generateRecipe" class="smoothscroll">Get Recipes</a></li>
+            <li><a href="#dishes" class="smoothscroll">Dishes</a></li>
+            <li><a href="#contact" class="smoothscroll">Contact</a></li>
+          </ul>
       </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#h" class="smoothscroll">Home</a></li>
-          <li><a href="#dishes" class="smoothscroll">Dishes</a></li>
-          <li><a href="#subscribe" class="smoothscroll">Subscribe</a></li>
-          <li><a href="#contact" class="smoothscroll">Contact</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
     </div>
   </div>
 
+
   <!-- ********** HEADER SECTION ********** -->
-  <div id="h">
+  <div id="generateRecipe">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 welcome">
-          <h1>A LANDING PAGE<br/>FOR YOUR RESTAURANT</h1>
+        <div class="welcome">
+          <h1>WANT Food Inspiration?</h1>
           <hr class="aligncenter">
-          <p>Enjoy the experience of our restaurant.<br/>Register to know our latest recipes.</p>
-          <div class="col-md-10 col-md-offset-1 centered mt">
-            <form role="form" action="register.php" method="post" enctype="plain">
-              <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-              <button class='btn btn-lg btn-orange subscribe-submit' type="submit">Subscribe</button>
+          <p>Click the button see what we have for you.</p>
+          <div class="mt">
+              <button class='btn btn-lg btn-orange btn-submit' type="submit">mm... food</button>
             </form>
           </div>
         </div>
       </div>
-      <!--/row -->
     </div>
-    <!-- /.container -->
   </div>
   <!--/ H -->
 
   <!-- ********** RECIPE SLIDER SECTION ********** -->
   <div class="container" id="dishes">
     <div class="row mtb">
-      <h3 class="centered">RECIPES</h3>
+      <h3 class="centered">DISHES</h3>
       <hr class="aligncenter mb">
       <p class="text-p centered">Enjoy your meals. You can click each picture to display more information.</p>
       <div class="col-md-10 col-md-offset-1">
@@ -131,62 +115,46 @@
 
   <!-- ********** FOOTER SECTION ********** -->
   <div id="f">
-    <div class="container" id="subscribe">
-      <div class="row">
-        <h3 class="centered">SUBSCRIBE TO OUR NEWSLETTER</h3>
-        <hr class="aligncenter mb">
-        <p class="text-p centered">We will let you know all our awesome offers.</p>
-        <div class="col-md-6 col-md-offset-3 centered">
-          <form role="form" action="register.php" method="post" enctype="plain">
-            <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-            <button class='btn btn-lg btn-orange subscribe-submit' type="submit">Subscribe</button>
+    <div id="contact">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h3 class="centered">CONTACT US</h3>
+          <hr class="aligncenter mb">
+
+          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              <div class="validate"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+              <div class="validate"></div>
+            </div>
+
+            <div class="loading"></div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+            <div class="form-send">
+              <button type="submit" class="btn btn-large">Send Message</button>
+            </div>
+
           </form>
         </div>
-      </div>
-      <!--/row -->
-    </div>
-    <!--/container -->
-  </div>
-
-  <div id="contact">
-    <div class="container">
-      <div class="col-md-8 col-md-offset-2">
-        <h3 class="centered">CONTACT US</h3>
-        <hr class="aligncenter mb">
-
-        <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-
-          <div class="form-group">
-            <label for="contact-name">Your Name</label>
-            <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <label for="contact-email">Your Email</label>
-            <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <label for="contact-subject">Subject</label>
-            <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-            <div class="validate"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="contact-message">Your Message</label>
-            <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-            <div class="validate"></div>
-          </div>
-
-          <div class="loading"></div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-
-          <div class="form-send">
-            <button type="submit" class="btn btn-large">Send Message</button>
-          </div>
-
-        </form>
       </div>
     </div>
   </div>
@@ -204,12 +172,10 @@
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/php-mail-form/validate.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
   <script src="lib/modernizr/modernizr.custom.js"></script>
-  <script src="lib/stellar/stellar.min.js"></script>
   <script src="lib/catslider/catslider.js"></script>
 
-  <!-- Template Main Javascript File -->
+  <!-- Main Javascript File -->
   <script src="js/main.js"></script>
 
 </body>

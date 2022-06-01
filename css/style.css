@@ -1,4 +1,4 @@
-/*1. GENERAL STRUCTURES*/
+/*GENERAL STRUCTURES*/
 
 * {
   margin: 0;
@@ -84,24 +84,10 @@ html, body {
   width: 100%;
 }
 
-::-moz-selection {
-  color: #fff;
-  text-shadow: none;
-  background: #2B2E31;
-}
-
 ::selection {
   color: #fff;
   text-shadow: none;
   background: #2B2E31;
-}
-.tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -121,9 +107,10 @@ a:hover, a:focus {
   color: #e16a3e;
 }
 
-/* BOOTSTRAP MODIFICATION */
+/* NAVIGATION MODIFICATION */
 
 .navbar-brand {
+  width: 30px;
   height: 50px;
   padding: 10px 15px;
   font-size: 20px;
@@ -148,6 +135,7 @@ a:hover, a:focus {
 hr {
   border: 1px solid #42413e;
   width: 100px;
+  margin-top: 20px;
 }
 
 .nav-stacked>li {
@@ -194,29 +182,9 @@ hr {
   background: #f2f2f2;
 }
 
-/* FORM CONFIGURATION */
+/* GENERATE RECIPE */
 
-input {
-  font-size: 16px;
-  min-height: 40px;
-  border-radius: 2px;
-  line-height: 20px;
-  padding: 11px 30px 12px;
-  border: 1px solid #b9b9af;
-  margin-bottom: 10px;
-  background-color: #fff;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-}
-
-.subscribe-input {
-  float: left;
-  width: 70%;
-  text-align: left;
-  margin-right: 2px;
-}
-
-.subscribe-submit {
+.btn-submit {
   right: 0;
 }
 
@@ -235,32 +203,32 @@ input {
 
 /* HEADER SECTION */
 
-#h {
+#generateRecipe {
   background: url(../img/header.jpg) no-repeat center top;
   padding-top: 150px;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 650px;
+  min-height: 550px;
   width: 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
   background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
 .welcome {
   background: #eaeced;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
   opacity: 0.9
 }
 
 .welcome h1 {
+  padding: auto;
   text-align: center;
   font-weight: 900;
 }
@@ -268,7 +236,6 @@ input {
 /* FOOTER SECTION */
 
 #f {
-  background: #f3f3f3;
   padding-bottom: 50px;
   padding-top: 50px;
   margin-top: 25px;
