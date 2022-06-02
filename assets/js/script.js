@@ -2,21 +2,30 @@
 var url = "https://foodish-api.herokuapp.com/api/";
 
 
-// food api
+//calling fetch function on the first server
 function getImage() {
-
-fetch(url).then(function (response) {
+    //getting response back from serer
+    fetch(url).then(function (response) {
+        //making the data readable by calling json
     response.json().then(function (data) {
+        //getting image and storing it in food
       var food = data.image.split("/");
+      //getting the fourth element in the food url
       food = food[4];
+      //selecting the div and stroing image in the image tag
       document.querySelector("#displayImg").src = data.image;
+      //calling fetch functuon on the second url
       fetch(
       `https://api.edamam.com/api/recipes/v2?type=public&q=${food}&app_id=9f8c06a1&app_key=37fb7006cd139a8bc28ebed08978d58b`
+      //getting response back
       ).then(function (response) {
+          //making that response back readable
         response.json().then(function (data) {
-          test = data;
-          console.log(data);
+          //storing data in test
+            test = data;
+            //storing ingredients 
           let ingredients = data.hits[0].recipe.ingredientLines || '';
+          //adding list items by a if inro listItem in html
           if (ingredients) {
             let itemList = document.getElementById('ingredients');
             itemList.innerHTML = '';
@@ -31,7 +40,7 @@ fetch(url).then(function (response) {
     });
   });
 }
-
+//calling getImage();
 getImage();
-
+//selecting the button and calling event listener on it and calling the get image function
 document.querySelector("button").addEventListener("click", getImage);
