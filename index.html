@@ -1,182 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>mm... food</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mm...FOOD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/style/style.css" />
+</head>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Libre+Baskerville:400italic" rel="stylesheet">
+<body>
 
-  <!-- CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="lib/catslider/catslider.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+<header>
+    <h1 class="red-text">
+        mm... FOOD!
+    </h1>
+</header>
 
-
-
-<!-- navigation -->
-<body data-spy="scroll" data-offset="58" data-target="#navigation">
-  <div id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" width="30"</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#generateRecipe" class="smoothscroll">Get Recipes</a></li>
-            <li><a href="#dishes" class="smoothscroll">Dishes</a></li>
-            <li><a href="#contact" class="smoothscroll">Contact</a></li>
-          </ul>
-      </div>
+<section class="">
+    <div class ="" id="div1">
+        <img src="" alt="" id="displayImg" class="img">
     </div>
-  </div>
 
-
-  <!-- ********** HEADER SECTION ********** -->
-  <div id="generateRecipe">
-    <div class="container">
-      <div class="row">
-        <div class="welcome">
-          <h1>WANT Food Inspiration?</h1>
-          <hr class="aligncenter">
-          <p>Click the button see what we have for you.</p>
-          <div class="mt">
-              <button class='btn btn-lg btn-orange btn-submit' type="submit">mm... food</button>
-            </form>
-          </div>
-        </div>
-      </div>
+    <div class="blue-text">
+        <button>food generator</button>
+        <ul id="ingredients"></ul>
     </div>
-  </div>
-  <!--/ H -->
+</section>
 
-  <!-- ********** RECIPE SLIDER SECTION ********** -->
-  <div class="container" id="dishes">
-    <div class="row mtb">
-      <h3 class="centered">DISHES</h3>
-      <hr class="aligncenter mb">
-      <p class="text-p centered">Enjoy your meals. You can click each picture to display more information.</p>
-      <div class="col-md-10 col-md-offset-1">
-        <div id="mi-slider" class="mi-slider">
-          <ul>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/1.png" alt="img01"><h4>Salmon</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/2.png" alt="img02"><h4>Seafood Platter</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/3.png" alt="img03"><h4>Crawfish</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/4.png" alt="img04"><h4>Bouillabaisse</h4></a></li>
-          </ul>
-          <ul>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/5.png" alt="img05"><h4>Steak</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/6.png" alt="img06"><h4>Ribs &amp; Bread</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/7.png" alt="img07"><h4>Pork</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/8.png" alt="img08"><h4>Lasagna</h4></a></li>
-          </ul>
-          <ul>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/9.png" alt="img09"><h4>Banana Pudding</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/10.png" alt="img10"><h4>Black Bottom Pie</h4></a></li>
-            <li><a data-toggle="modal" data-target="#myModal"><img src="img/food/11.png" alt="img11"><h4>Black Forest</h4></a></li>
-          </ul>
-          <nav>
-            <a href="#">SeaFood</a>
-            <a href="#">Meat</a>
-            <a href="#">Desserts</a>
-          </nav>
-        </div>
-      </div>
-      <!--/col-md-10 -->
-    </div>
-    <!--/row -->
-  </div>
-  <!--/container -->
+<footer class="blue white-text">
+    <p>2022, by Yaakov, Muhammad, Shuyu, and Brikena</p>
+</footer>
+    
 
-  <!-- MODAL DEMO FOR A MENU ITEM -->
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h5 class="modal-title" id="myModalLabel">Skillet Poached Eggs</h5>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive aligncenter" src="img/modalbg.jpg" alt="">
-          <h4>Poached Eggs</h4>
-          <p class="text-p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-          <p class="text-p">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ********** FOOTER SECTION ********** -->
-  <div id="f">
-    <div id="contact">
-      <div class="container">
-        <div class="col-md-8 col-md-offset-2">
-          <h3 class="centered">CONTACT US</h3>
-          <hr class="aligncenter mb">
-
-          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-
-            <div class="form-group">
-              <label for="contact-name">Your Name</label>
-              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-email">Your Email</label>
-              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-subject">Subject</label>
-              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-              <div class="validate"></div>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-message">Your Message</label>
-              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-              <div class="validate"></div>
-            </div>
-
-            <div class="loading"></div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-            <div class="form-send">
-              <button type="submit" class="btn btn-large">Send Message</button>
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="copyrights">
-    <div class="container">
-      <p>Copyright &copy; 2022. mm... food All rights reserved.</p>
-      <div class="credits">
-        
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/php-mail-form/validate.js"></script>
-  <script src="lib/modernizr/modernizr.custom.js"></script>
-  <script src="lib/catslider/catslider.js"></script>
-
-  <!-- Main Javascript File -->
-  <script src="js/main.js"></script>
-
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
