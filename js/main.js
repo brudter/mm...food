@@ -1,8 +1,8 @@
 jQuery(document).ready(function( $ ) {
   
   // Slider
-  $(function() {
-    $('#mi-slider').catslider();
+    $(function() {
+      $('#mi-slider').catslider();
+    });
+  
   });
-
-});

@@ -138,14 +138,28 @@ hr {
   margin-top: 20px;
 }
 
-.nav-stacked>li {
-  border-left: 2px solid transparent
+/*DISPALY PAGE*/
+
+#display {
+  text-align:left;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #e16a3e;
+  margin-top: 0px;
 }
 
-.nav-stacked>li.active {
-  border-left: 2px solid #f27242;
-  background: #f9f9f9
+.img{
+  height: 300px;
+  width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
+section {
+  float: center;
+  text-align: center;
+}
+
 
 /* Modal Modification */
 
@@ -183,7 +197,6 @@ hr {
 }
 
 /* GENERATE RECIPE */
-
 .btn-submit {
   right: 0;
 }
@@ -217,7 +230,6 @@ hr {
 
 .welcome {
   background: #eaeced;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: auto;
   width: 500px;
   height: 300px;
@@ -244,110 +256,6 @@ hr {
 #contact {
   background: #fff;
   padding: 50px 0;
-}
-
-/* Contact Form */
-
-.contact-form label {
-   color: #999;
-}
-
-.contact-form input, .contact-form textarea {
-  padding: 10px 12px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  height: auto;
-}
-
-.contact-form .form-send {
-  text-align: center;
-}
-
-.contact-form .form-send button  {
-  background: #f27242;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.contact-form .form-send button:hover {
-  background: #ff8c61;
-}
-
-.contact-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact-form .loading {
-  display: none;
-  color: #555;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.contact-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.contact-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
-
-.contact-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
 }
 
 /* Copyrights */

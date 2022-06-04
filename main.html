@@ -4,8 +4,6 @@
   <meta charset="utf-8">
   <title>mm... food</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Libre+Baskerville:400italic" rel="stylesheet">
@@ -26,9 +24,8 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#generateRecipe" class="smoothscroll">Get Recipes</a></li>
-            <li><a href="#dishes" class="smoothscroll">Dishes</a></li>
-            <li><a href="#contact" class="smoothscroll">Contact</a></li>
+            <li class="active"><a href="#generateRecipe">Get Recipes</a></li>
+            <li><a href="#dishes">Dishes</a></li>
           </ul>
       </div>
     </div>
@@ -42,10 +39,9 @@
         <div class="welcome">
           <h1>WANT Food Inspiration?</h1>
           <hr class="aligncenter">
-          <p>Click the button see what we have for you.</p>
+          <p>Click the button to see what we have for you.</p>
           <div class="mt">
-              <button class='btn btn-lg btn-orange btn-submit' type="submit">mm... food</button>
-            </form>
+              <button class='btn btn-lg btn-orange btn-submit' onclick="location.href='dispaly.html'" type="submit">mm... food</button>
           </div>
         </div>
       </div>
@@ -85,11 +81,8 @@
           </nav>
         </div>
       </div>
-      <!--/col-md-10 -->
     </div>
-    <!--/row -->
   </div>
-  <!--/container -->
 
   <!-- MODAL DEMO FOR A MENU ITEM -->
   <!-- Modal -->
@@ -115,55 +108,12 @@
 
   <!-- ********** FOOTER SECTION ********** -->
   <div id="f">
-    <div id="contact">
+    <div id="copyrights">
       <div class="container">
-        <div class="col-md-8 col-md-offset-2">
-          <h3 class="centered">CONTACT US</h3>
-          <hr class="aligncenter mb">
-
-          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-
-            <div class="form-group">
-              <label for="contact-name">Your Name</label>
-              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-email">Your Email</label>
-              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-subject">Subject</label>
-              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-              <div class="validate"></div>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-message">Your Message</label>
-              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-              <div class="validate"></div>
-            </div>
-
-            <div class="loading"></div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-            <div class="form-send">
-              <button type="submit" class="btn btn-large">Send Message</button>
-            </div>
-
-          </form>
+        <p>Copyright &copy; 2022. mm... food All rights reserved.</p>
+        <div class="credits">
+          
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="copyrights">
-    <div class="container">
-      <p>Copyright &copy; 2022. mm... food All rights reserved.</p>
-      <div class="credits">
-        
       </div>
     </div>
   </div>
@@ -176,7 +126,7 @@
   <script src="lib/catslider/catslider.js"></script>
 
   <!-- Main Javascript File -->
-  <script src="js/main.js"></script>
-
+  <script src="./js/main.js"></script>
+  
 </body>
 </html>
