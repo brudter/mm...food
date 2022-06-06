@@ -19,6 +19,7 @@ Need some inspiration? MM...Food is a tool to help you find food inspiration, an
 ## Website Screenshot
 <img src="assets/images/ss-project.png" width="200">
 
-## Links
+### Repository link
 https://github.com/brudter/mm...food
+### Deployed Website Link
 https://brudter.github.io/mm...food/
