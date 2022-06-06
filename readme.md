@@ -1,5 +1,6 @@
 #MM...FOOD 
 
+```
 * AS A food enthusiast
 * I WANT food inspiration, and recipes to come along with it
 * SO THAT i can eat!!
@@ -11,5 +12,5 @@
 * THEN i see mouth watering recipes displayed at my very fingertips
 * WHEN i tap or click on one of these recipes
 * THEN the recipe appears full screen, so i can read it to completion
-
+```
 
