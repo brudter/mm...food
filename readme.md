@@ -1,10 +1,9 @@
-# MM...FOOD 
+### MM...FOOD
 
-## Description
-Need some inspiration? MM...Food is a tool to help you find food inspiration, and recipes to come along with it, at the tap of a single button. 
+### Description
+Need some inspiration? MM...Food is a tool to help you find food inspiration, and recipes to come along with it, at the tap of a single button.
 
-## User Story
-```
+### User Story
 * AS A food enthusiast
 * I WANT food inspiration, and recipes to come along with it
 * SO THAT i can eat!!
@@ -15,11 +14,13 @@ Need some inspiration? MM...Food is a tool to help you find food inspiration, an
 * WHEN i look beneath the picture
 * THEN i see recipes displayed at my very fingertips
 
-```
-## Website Screenshot
-<img src="assets/images/ss-project.png" width="200">
+### Website Screenshot
+![Main Page 1](/img/main-page-1.png)
+![Main Page 2](/img/main-page-2.png)
+![Display Recipe Page](/img/display-recipe-page.png)
 
 ### Repository link
 https://github.com/brudter/mm...food
+
 ### Deployed Website Link
 https://brudter.github.io/mm...food/

@@ -1,0 +1,280 @@
+/*GENERAL STRUCTURES*/
+
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  color: #42413e;
+  padding-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  padding: 0;
+  margin-bottom: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #42413e;
+  margin-top: 10px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  clear: both;
+}
+
+.centered {
+  text-align: center
+}
+
+.mt {
+  margin-top: 50px;
+}
+
+.mb {
+  margin-bottom: 50px;
+}
+
+.mtb {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mtb2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.ptb {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  width: 100%;
+}
+
+::selection {
+  color: #fff;
+  text-shadow: none;
+  background: #2B2E31;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  -webkit-transition: background-color .4s linear, color .4s linear;
+  -moz-transition: background-color .4s linear, color .4s linear;
+  -o-transition: background-color .4s linear, color .4s linear;
+  -ms-transition: background-color .4s linear, color .4s linear;
+  transition: background-color .4s linear, color .4s linear;
+  color: #f27242;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #e16a3e;
+}
+
+/* NAVIGATION MODIFICATION */
+
+.navbar-brand {
+  width: 30px;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #f27242;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #ccc;
+}
+
+hr {
+  border: 1px solid #42413e;
+  width: 100px;
+  margin-top: 20px;
+}
+
+/*DISPALY PAGE*/
+
+#display {
+  text-align:left;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #e16a3e;
+  margin-top: 0px;
+}
+
+.img{
+  height: 300px;
+  width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+section {
+  float: center;
+  text-align: center;
+}
+
+
+/* Modal Modification */
+
+.modal-content {
+  border-radius: 0px;
+}
+
+.modal-body {
+  padding: 0px;
+}
+
+.modal-body h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 10px 0;
+  color: #f27242;
+}
+
+.modal-body h5 {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  padding: 10px 10px 0;
+}
+
+.modal-body p {
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 18px;
+}
+
+.modal-footer {
+  background: #f2f2f2;
+}
+
+/* GENERATE RECIPE */
+.btn-submit {
+  right: 0;
+}
+
+.btn-orange {
+  background: #f27242;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btn-orange:hover {
+  background: #e16a3e;
+  color: white;
+}
+
+/* HEADER SECTION */
+
+#generateRecipe {
+  background: url(../img/header.jpg) no-repeat center top;
+  padding-top: 150px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 550px;
+  width: 100%;
+  background-size: 100%;
+  background-size: cover;
+}
+
+.welcome {
+  background: #eaeced;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  opacity: 0.9
+}
+
+.welcome h1 {
+  padding: auto;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* FOOTER SECTION */
+
+#f {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-top: 25px;
+}
+
+#contact {
+  background: #fff;
+  padding: 50px 0;
+}
+
+/* Copyrights */
+
+#copyrights {
+  background: #f3f3f3;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#copyrights p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+#copyrights a {
+  color: #f27242;
+}
+
+.credits {
+  color: #666;
+}
